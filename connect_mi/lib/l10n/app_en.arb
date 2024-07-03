@@ -1,0 +1,7 @@
+{
+    "@@locale": "en",
+    "landing_title": "Welcome",
+    "landing_subTitle": "Please enter the URL of your Mi-light hub.",
+
+    "generic_ipAddress": "IP-address"
+}
