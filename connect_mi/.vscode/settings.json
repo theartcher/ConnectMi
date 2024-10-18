@@ -1,5 +1,20 @@
 {
     "cSpell.words": [
-        "milight"
-    ]
+      "Aldrich",
+      "milight",
+      "RGBW"
+    ],
+    "highlight.regexes": {
+        "(\"@_[A-Z_]+\": {},)": {
+            "filterFileRegex": ".*\\.arb",
+            "decorations": [
+              {
+                "overviewRulerColor": "#ccccff",
+                "backgroundColor": "#ccccff",
+                "color": "#282c34",
+                "fontWeight": "bold"
+              }
+            ]
+          }
+    }
 }

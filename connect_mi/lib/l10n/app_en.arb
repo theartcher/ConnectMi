@@ -1,7 +1,21 @@
 {
     "@@locale": "en",
-    "landing_title": "Welcome",
-    "landing_subTitle": "Please enter the URL of your Mi-light hub.",
 
-    "generic_ipAddress": "IP-address"
+    "@_ERRORS": {},
+    "error_inputCantBeEmpty": "The field can't be empty.",
+
+    "@_ACTIONS": {},
+    "actions_continue": "Continue",
+    "actions_dismiss": "Dismiss",
+
+    "@_GENERICS": {},
+    "generic_connect": "Connect",
+    "generic_ipAddress": "IP-address",
+    "generic_mi": "Mi",
+
+    "@_LANDING": {},
+    "landing_Aa": "Aa",
+    "landing_subTitle": "Please enter the URL of your Mi-light hub.",
+    "landing_title": "Welcome",
+    "landing_failedToFindHub": "Failed to find MiLight-hub, please check your URL."
 }

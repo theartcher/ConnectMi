@@ -1,6 +1,7 @@
 import 'package:connect_mi/constants/routes.dart';
 import 'package:connect_mi/constants/themes.dart';
 import 'package:connect_mi/utils/preferences_manager.dart';
+import 'package:connect_mi/utils/snackbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -46,6 +47,7 @@ class MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       locale: _locale,
+      scaffoldMessengerKey: SnackBarManager.scaffoldMessengerKey,
       debugShowCheckedModeBanner: false,
       routerConfig: router,
       theme: lightTheme,

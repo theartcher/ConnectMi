@@ -3,10 +3,20 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 ///The manager for handling local (-persisted) storage.
 class PreferencesManager {
+  static final PreferencesManager _instance = PreferencesManager._internal();
   static SharedPreferences? _preferences;
+
   static const String _darkModeKey = 'isDarkMode';
   static const String _localeKey = 'locale';
   static const String _milightUrl = 'hub-Url';
+
+  // Private constructor
+  PreferencesManager._internal();
+
+  // Factory constructor returning the same instance
+  factory PreferencesManager() {
+    return _instance;
+  }
 
   ///Initialize the singleton of the PreferencesManager.
   static Future<void> initialize() async {
