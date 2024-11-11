@@ -17,6 +17,9 @@ dependencies:
   http: ^1.2.1
   flutter_spinkit: ^5.2.1
   provider: ^6.1.2
+  flutter_colorpicker: ^1.1.0
+  flutter_circle_color_picker: ^0.3.0
+  gradient_slider: ^1.0.2
 
 dev_dependencies:
   flutter_test:

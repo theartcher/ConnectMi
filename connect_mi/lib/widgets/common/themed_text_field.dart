@@ -6,12 +6,14 @@ class ThemedTextField extends StatelessWidget {
   final String label;
   final bool isDisabled;
   final Function(String value) onChanged;
+  final Function(String value) onEditingComplete;
 
   const ThemedTextField({
     super.key,
     required this.controller,
     required this.label,
     required this.onChanged,
+    required this.onEditingComplete,
     this.isDisabled = false,
   });
 
@@ -49,17 +51,13 @@ class ThemedTextField extends StatelessWidget {
                               : colorTheme.primary,
                         ),
                       ),
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(
-                          color: colorTheme.primary,
-                        ),
-                      ),
                     ),
                     keyboardType: TextInputType.number,
                     inputFormatters: <TextInputFormatter>[
                       FilteringTextInputFormatter.digitsOnly
                     ],
                     onChanged: isDisabled ? null : onChanged,
+                    onEditingComplete: () => onEditingComplete(controller.text),
                     enabled: !isDisabled,
                   ),
                 ),
