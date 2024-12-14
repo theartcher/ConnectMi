@@ -18,6 +18,12 @@ class HomePage extends StatelessWidget {
         ElevatedButton(
             onPressed: () => clearAllPreferences(), child: const Text("Reset")),
         ElevatedButton(
+            onPressed: () => clearAllPreferences(), child: const Text("Reset")),
+        ElevatedButton(
+            onPressed: () => clearAllPreferences(), child: const Text("Reset")),
+        ElevatedButton(
+            onPressed: () => clearAllPreferences(), child: const Text("Reset")),
+        ElevatedButton(
             onPressed: () => context.push(landingPageRoute),
             child: const Text("Landing")),
         ElevatedButton(
